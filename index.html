@@ -1,0 +1,69 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookself</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-head">
+        <h1 class="title">Bookself</h1>
+        <button class="add-book" id="add-book">Tambah Buku</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-add" id="container-add">
+        <h1 class="title">Tambah Buku</h1>
+
+        <form id="form-add">
+          <div class="frominput">
+            <label for="judul">Judul</label>
+            <input type="text" name="judul" id="judul" />
+          </div>
+          <div class="frominput">
+            <label for="penulis">Penulis</label>
+            <input type="text" name="penulis" id="penulis" />
+          </div>
+          <div class="frominput">
+            <label for="tahun">Tahun</label>
+            <input type="number" name="tahun" id="tahun" />
+          </div>
+
+          <div class="frominput cekbok">
+            <label for="dibaca">Sudah dibaca</label>
+            <input type="checkbox" name="judul" id="dibaca" />
+          </div>
+
+          <div class="frominput submit">
+            <input type="submit" value="Tambah" />
+          </div>
+        </form>
+      </div>
+
+      <div class="container-sudahbelum">
+        <h1 class="title">Belum selesai dibaca</h1>
+
+        <div class="books" id="blumbaca"></div>
+      </div>
+
+      <div class="container-sudahbelum">
+        <h1 class="title">Selesai dibaca</h1>
+
+        <div class="books" id="sudahbaca"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="content">
+        <p>&copy; 2023. Bookself by riky fahrian</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
